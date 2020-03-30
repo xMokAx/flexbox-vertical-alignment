@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+
+ul {
+  margin-left: 16px;
+}
+
+select {
+  font-size: 16px;
+}
+
+label {
+  font-size: 16px;
+}
+
+svg {
+  width: 48px;
+  height: 48px;
+}
+
+.container {
+  margin: 16px 16px 0 5vw;
+}
+
+.button-container {
+  border: solid 2px pink;
+}
+
+.select-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.select-container > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  display: inline-flex;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: plum;
+  border: dashed 2px purple;
+  font-size: 24px;
+  margin-right: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button svg {
+  margin-left: 4px;
+}
+
+.flex-container {
+  display: flex;
+  height: 65vh;
+  width: 80vw;
+  border: solid 2px green;
+  margin: 45px auto;
+  padding: 32px;
+  position: relative;
+  /* width: 300px; */
+  /* flex-wrap: wrap; */
+
+  /* align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: stretch;
+  align-items: baseline; */
+
+  /* align-content: flex-start;
+  align-content: flex-end;
+  align-content: center;
+  align-content: space-between;
+  align-content: space-around;
+  align-content: stretch;
+  align-content: space-evenly; */
+
+  /* justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: space-evenly; */
+}
+
+.inner-container {
+  position: absolute;
+  width: calc(100% - 64px);
+  height: calc(100% - 64px);
+  border: dashed 1px blue;
+}
+
+.flex-item {
+  border: dashed 4px purple;
+  padding: 8px;
+  background-color: plum;
+  margin: 8px;
+  z-index: 1;
+}
+
+.sec-item {
+  font-size: 32px;
+  /* align-self: flex-start;
+  align-self: flex-end;
+  align-self: center;
+  align-self: stretch;
+  align-self: baseline; */
+}
+
+.axis-hor {
+  position: absolute;
+  height: 2px;
+  width: calc(100% + 70px);
+  top: 12px;
+  left: 0;
+  margin-left: -35px;
+  background-color: red;
+}
+
+.axis-ver {
+  position: absolute;
+  height: calc(100% + 70px);
+  width: 2px;
+  top: 0;
+  left: 12px;
+  margin-top: -35px;
+  background-color: red;
+}
+
+.label {
+  position: absolute;
+  color: red;
+}
+
+.hor-label {
+  left: calc(50% - 40px);
+}
+
+.ver-text {
+  writing-mode: vertical-lr;
+}
+
+.ver-label {
+  top: calc(50% - 34px);
+}
+
+.hor-start {
+  right: calc(100% - 30px);
+}
+
+.hor-end {
+  left: calc(100% - 30px);
+}
+
+.ver-start {
+  left: 6px;
+  bottom: calc(100% - 35px);
+}
+
+.ver-end {
+  left: 6px;
+  top: calc(100% - 35px);
+}
